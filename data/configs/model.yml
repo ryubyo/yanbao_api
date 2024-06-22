@@ -1,0 +1,83 @@
+baichuan:
+  default:
+    api_key: c42fd7348febcee602bcc257c71a4de2
+    model: Baichuan2-53B
+    name: 百川
+    provider: BaiChuanWorker
+    secret_key: s88g5gTKgHrCmR1PELPd3OoRBIk
+    url: https://api.baichuan-ai.com/v1/chat/completions
+  models: null
+  website: https://www.baichuan-ai.com/home#api-enter
+chatopenai:
+  default:
+    api_key: sk-jZImf6gLYkTvvV8q3f2e2560E1B84368Ad5bC1B8EcDc4870
+    base_url: https://oioi.cc/v1
+    model: gpt-3.5-turbo-0613
+    models:
+    - gpt-4-1106-preview
+    - gpt-4-0613
+    - gpt-4-0314
+    - gpt-4
+    - gpt-3.5-turbo-16k-0613
+    - gpt-3.5-turbo-16k
+    - gpt-3.5-turbo-1106
+    - gpt-3.5-turbo-0613
+    - gpt-3.5-turbo
+    name: GPT4
+  for_tts:
+    api_key: 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
+    base_url: https://openai-openai-proxy-cthigpawkh.us-west-1.fcapp.run/v1/
+    model: tts-1
+  oioi:
+    api_key: sk-jZImf6gLYkTvvV8q3f2e2560E1B84368Ad5bC1B8EcDc4870
+    base_url: https://oioi.cc/v1
+  gjj:
+    api_key: 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
+    base_url: https://openai-openai-proxy-cthigpawkh.us-west-1.fcapp.run/v1/
+  models: null
+  website: https://platform.openai.com/docs/api-reference/chat/streaming
+erniebotchat:
+  default:
+    access_token: 063621eca4f7dce51f0ef57db856b5bbbaa5c150
+    api_type: aistudio
+    api_key: UDVUmUmEqRLXGG4M1MHqhakl
+    secret_key: 5v8b5Y286ir3cwfN91a8egMFZGjix04f
+    ernie_client_id: GsX60X5VEyI45YXuWxIRMVqL
+    ernie_client_secret: XxaQ7FY3dbV8e1IlNOZXIZ6X2EAWSQw2
+    model: ernie-bot-4
+    temperature: 0.5
+    name: 文心
+  for_tts:
+    client_id: GsX60X5VEyI45YXuWxIRMVqL
+    client_secret: XxaQ7FY3dbV8e1IlNOZXIZ6X2EAWSQw2
+    scope: audio_tts_post
+    timeout: 5
+  models:
+  - ERNIE-Bot-4
+  - ERNIE-Bot-turbo
+  website: ''
+ali:
+  for_tts:
+    akid: LTAI5t9vxkwygamegqrcT4VC
+    aksecret: HD1BDZUvEgQXeD01uWGulVr2IUUFSi
+    appkey: 0EgnX1BQgtYAogpu
+    url: wss://nls-gateway.cn-shanghai.aliyuncs.com/ws/v1
+azure:
+  for_tts:
+    subscription: 391c989814ba4910a93491b0cfc04c88
+    region: japaneast
+  other1:
+    subscription: 990e9142a51446de8aa0c18ca6da4af5
+    region: japaneast
+es:
+  default:
+    fingerprint: 55c6077cd35cba33c12c52013eecc86fedb073bfd784776c2ce03e06bf5d49eb
+    hosts: https://localhost:9200
+    password: SJKPpxB-z8=sZL9Pc8mO
+zhipuai:
+  default:
+    api_key: 039745546c4fa54c4a1b56009a683a8d.KpOdr42ii5ASbozq
+    model: chatglm_turbo
+    name: 智谱
+  models: null
+  website: ''

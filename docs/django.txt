@@ -1,0 +1,68 @@
+创建django项目
+
+django-admin startproject yanbao_api
+cd yanbao_api
+
+python .\manage.py startapp appaccounts
+python .\manage.py startapp apptools
+python .\manage.py startapp appmodels
+
+python -m pip install mysqlclient
+
+settings.py 文件修改 
+
+ALLOWED_HOSTS = ["*", ]
+INSTALLED_APPS = [
+    'rest_framework',
+    'rest_framework.authtoken',
+    'appaccounts.apps.AppaccountsConfig',
+    'apptools.apps.ApptoolsConfig',
+    'appmodels.apps.AppmodelsConfig',
+]
+LANGUAGE_CODE = "zh-hans"
+
+创建数据库脚本
+python manage.py makemigrations
+根据脚本创建数据库表
+python manage.py migrate
+
+向数据库中添加用户
+python manage.py createsuperuser
+用户名 (leave blank to use 'yilon'): yanbao
+电子邮件地址: yanbao@yanbao.com
+Password: yanbao@#24
+
+启动项目 默认端口是8000
+python manage.py runserver
+
+指定端口号启动
+python manage.py runserver 0.0.0.0:6777
+
+
+用户名 (leave blank to use 'yilon'): admin
+电子邮件地址: admin@admin.cn
+Password: admin
+
+
+
+阿里云MySQL
+'HOST': '101.133.164.43',
+'PORT': '3306'
+
+
+root/ms23@24
+api_chat/api_chat_2023 (DB:api_chat)
+
+-- 创建用户
+CREATE USER 'api_chat'@'%' IDENTIFIED BY 'api_chat_2023';
+create database api_chat;
+GRANT ALL PRIVILEGES ON api_chat.* TO 'api_chat'@'%';
+-- vscode无法登录
+ALTER USER 'api_chat'@'%' IDENTIFIED WITH mysql_native_password BY 'api_chat_2023';
+
+-- 创建用户
+CREATE USER 'yanbaoapi'@'%' IDENTIFIED BY 'yanbao@24#api';
+create database yanbaoapi;
+GRANT ALL PRIVILEGES ON yanbaoapi.* TO 'yanbaoapi'@'%';
+-- vscode无法登录
+ALTER USER 'yanbaoapi'@'%' IDENTIFIED WITH mysql_native_password BY 'yanbao@24#api';

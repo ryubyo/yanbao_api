@@ -1,0 +1,36 @@
+openai:
+  voices:
+  - Alloy,中性,清晰均衡,适合新闻播报和专业介绍
+  - Echo,女性,柔和友好,适合对话式应用,如虚拟助手和客户服务
+  - Fable,男性,生动叙述性强,适合讲故事和儿童内容
+  - Onyx,男性，深沉有力,适合广告/公告和指导性内容
+  - Nova,女性,现代动感,适合科技和创新内容
+  - Shimmer,女性,轻快活泼,适合娱乐和休闲内容
+  voice: onyx
+  url: https://ailivegpt4.openai.azure.com/openai/deployments/openaitts/audio/speech
+  params:
+    api-version: 2024-02-15-preview
+  headers:
+    Content-Type: application/json
+    api-key: 591ca402a01d433e9bd996e9ee5a1147
+  model: tts-1
+azure:
+  voice: zh-CN-XiaochenNeural
+edge:
+  voices:
+  voice: zh-TW-HsiaoChenNeural
+  rate: +10%
+  volume: +0%
+baidu:
+  per: 0
+  spd: 5
+  pit: 5
+  vol: 5
+  aue: 3
+  cuid: 123456PYTHON
+ali:
+  voice: xiaoyun
+  sample_rate: 16000
+  volume: 50
+  speech_rate: 10
+  pitch_rate: 0

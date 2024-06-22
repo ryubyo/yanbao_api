@@ -1,0 +1,3 @@
+DEBUG - 02-27 05:54:23 - views_tts_azure.py[:23] - subscription:391c989814ba4910a93491b0cfc04c88, region:japaneast voice:zh-CN-XiaochenNeural
+DEBUG - 02-27 05:54:54 - views_tts_azure.py[:23] - subscription:391c989814ba4910a93491b0cfc04c88, region:japaneast voice:zh-CN-XiaochenNeural
+DEBUG - 02-27 05:55:01 - views_tts_azure.py[:23] - subscription:391c989814ba4910a93491b0cfc04c88, region:japaneast voice:zh-CN-XiaochenNeural

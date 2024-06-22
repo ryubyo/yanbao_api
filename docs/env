@@ -1,0 +1,17 @@
+conda create --prefix=D:\ProgramData\pythonenv\yanbao_api python=3.10
+conda activate yanbao_api
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple ipykernel django djangorestframework pyyaml mysqlclient
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pydub
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple openai
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple edge_tts
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple azure-cognitiveservices-speech
+conda install conda=23.11.0
+
+
+# 安装nls /opt/alibabacloud-nls-python-sdk-1.0.0
+# D:\ProjectPython\ali\alibabacloud-nls-python-sdk-1.0.0\alibabacloud-nls-python-sdk-1.0.0
+# conda activate 
+# python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+# python -m pip install .
+
